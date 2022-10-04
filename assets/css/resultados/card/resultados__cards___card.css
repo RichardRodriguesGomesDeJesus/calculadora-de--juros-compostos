@@ -1,0 +1,21 @@
+.resultados__cards___card{
+    background: var(--color-principal);
+    border-radius: 8px;
+    box-shadow: 0 6px 0px black;
+    color: var(--background-color-secundaria);
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    
+}
+@media screen and (min-width: 0 ) {
+    .resultados__cards___card{
+        width: calc(100% - 1rem);
+    }
+}
+@media screen and (min-width: 768px) {
+    .resultados__cards___card{
+        
+        width: calc(33.33% - 4rem);
+    }
+}

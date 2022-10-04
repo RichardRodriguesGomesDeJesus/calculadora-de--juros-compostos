@@ -1,0 +1,19 @@
+.resultados{
+    align-items: center;
+    margin-top: 16px;
+    background: var(--background-color-secundaria);
+    border-radius: 8px;
+    box-shadow: 0 6px 5px black;
+}
+
+@media screen and (min-width: 0) {
+    .resultados{
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .resultados{
+        padding: 2rem;
+    }
+}

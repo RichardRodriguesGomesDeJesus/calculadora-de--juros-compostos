@@ -1,0 +1,31 @@
+.calculator__form___input{
+    font-family: var(--font-principal);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 4px;
+    height: 24px;
+    width: 100%;
+}
+.div__input{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 5px black;
+}
+.input__icon{
+    color: black;
+    background: var(--color-secondaria);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px ;
+    font-size: 1rem;
+    font-family: var(--font-principal);
+    font-weight: 400;
+    padding: 8px;
+}
+#time{
+    background: url(../../img/clock.svg) var(--color-secondaria) center / cover no-repeat;
+    height: 16px;
+    width: 16px;
+
+}

@@ -1,0 +1,18 @@
+.resultados__title{
+    font-family: var(--font-principal);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+@media screen and (min-width: 0 ){
+    .resultados__title{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .resultados__title{
+        font-size: 2rem;
+    }
+}

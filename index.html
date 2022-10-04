@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/container.css">
+    <link rel="stylesheet" href="assets/css/calculator/calculator.css">
+    <link rel="stylesheet" href="assets/css/calculator/calculator__title.css">
+    <link rel="stylesheet" href="assets/css/calculator/calculator__button.css">
+    <link rel="stylesheet" href="assets/css/form/calculator__form___input.css">
+    <link rel="stylesheet" href="assets/css/form/calculator__form___label.css">
+    <link rel="stylesheet" href="assets/css/form/calculator__form.css">
+    <link rel="stylesheet" href="assets/css/resultados/resultados.css">
+    <link rel="stylesheet" href="assets/css/resultados/resultados__title.css">
+    <link rel="stylesheet" href="assets/css/resultados/resultados__cards.css">
+    <link rel="stylesheet" href="assets/css/resultados/card/resultados__cards___card.css">
+    <link rel="stylesheet" href="assets/css/resultados/card/resultados__cards___card____nome.css">
+    <link rel="stylesheet" href="assets/css/resultados/card/resultados__cards___card____valor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Calculadora de juros Compostos</title>
+</head>
+<body>
+    <main class="contents">
+        
+        <section class="calculator">
+            <h2 class="calculator__title">Simulador de Juros Compostos</h2>
+            <form  class="calculator__form">
+                <div class="container">
+                    <label for="capitalInicial" class="calculator__form___label">Valor inicial</label>
+                    <div class="div__input">
+                        <span class="input__icon" id="">R$</span><input type="number" id="capitalInicial"  class="calculator__form___input" placeholder="00,00" title="prencha o campo" required>
+                    </div>
+                    
+                </div>
+                <div class="container">
+                    <label for="valorMensal" class="calculator__form___label">Valor mensal</label>
+                    <div class="div__input">
+                        <span class="input__icon"class="input__icon" id="">R$</span><input type="number" id="valorMensal" class="calculator__form___input" placeholder="00,00" title="prencha o campo" required>
+                    </div>
+                    
+                </div>
+                <div class="container">
+                    <label for="juros" class="calculator__form___label">Taxa de juros anual</label>
+                    <div class="div__input">
+                        <span class="input__icon" id="">%</span><input type="number" id="juros" class="calculator__form___input" placeholder="00,00" title="prencha o campo" required>
+                    </div>
+                    
+                </div>
+                <div class="container">
+                    <label for="meses" class="calculator__form___label">Período em meses</label>
+                    <div class="div__input">
+                        <span class="input__icon" id="time"></span><input type="number" id="meses" class="calculator__form___input" placeholder="00,00" title="prencha o campo" required>
+                    </div>   
+                </div>
+                <input type="submit" value="Calcular" class="calculator__button" id="calcular">
+                <button class="calculator__button" id="limpar" >Limpar</button>
+            </form>
+        </section>
+        
+    </main>
+    <script src="./assets/js/calculadora.js"></script>
+</body>
+</html>

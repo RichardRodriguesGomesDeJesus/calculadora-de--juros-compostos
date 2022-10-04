@@ -1,0 +1,30 @@
+.calculator__button{
+    background: var(--color-principal);
+    border: var(--color-principal);
+    border-radius: 8px;
+    box-shadow: -1px 6px 0px ;
+    font-size: 1rem;
+    font-family: var(--font-principal);
+    font-weight: 400;
+    padding: 8px;
+    margin-bottom: 0.5rem;
+}
+.calculator__button:hover{
+    cursor: pointer;
+}
+.calculator__button:active{
+    background-color: var(--background-color);
+    box-shadow: -1px -6px 0px ;
+}
+
+@media screen and (min-width:0) {
+    .calculator__button{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .calculator__button{
+        width: 40%;
+    }
+}
