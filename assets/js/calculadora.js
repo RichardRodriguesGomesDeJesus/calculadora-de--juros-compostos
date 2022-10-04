@@ -22,10 +22,10 @@ reset.addEventListener('click', evento=>{
 function jurosCompostos(juros,meses,depositos,Capitalinicial) {
   let c1 = ((Math.pow((1 + (parseFloat(juros)/100)),1/12)-1) * 100) 
   let c2 = 1 + (c1/ 100)
-  let c3 = Math.pow(c2,parseInt(meses))
-  let c4 = parseInt(Capitalinicial) * c3
+  let c3 = Math.pow(c2,parseFloat(meses))
+  let c4 = parseFloat(Capitalinicial) * c3
   let c5 =  (c3 -1) / (c1/100)
-  let c6 = parseInt(depositos) * c5
+  let c6 = parseFloat(depositos) * c5
   const M = c4 + c6
   const total = M.toFixed(2)
   return main.innerHTML = `
