@@ -4,6 +4,7 @@ const Capitalinicial = document.querySelector('#capitalInicial')
 const depositosMensais = document.querySelector('#valorMensal')
 const jurosMensal = document.querySelector('#juros')
 const meses = document.querySelector('#meses')
+const inputs = document.querySelectorAll('input')
 
 const start = document.querySelector(".calculator__form")
 const reset = document.querySelector("#limpar")
@@ -14,10 +15,9 @@ start.addEventListener('submit', evento=>{
 })
 reset.addEventListener('click', evento=>{
   evento.preventDefault()
-  jurosMensal.value = ''
-  meses.value = ''
-  depositosMensais.value = ''
-  Capitalinicial.value = ''
+  inputs.forEach(input =>{
+    input.value = ''
+  })
 })
 function jurosCompostos(juros,meses,depositos,Capitalinicial) {
   let c1 = ((Math.pow((1 + (parseFloat(juros)/100)),1/12)-1) * 100) 
